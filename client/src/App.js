@@ -6,7 +6,7 @@ import PokemonCreated from './componentes/PokemonCreated/PokemonCreated'
 import Detail from './componentes/Detail/Detail'
 import axios from 'axios';
 
-axios.defaults.baseURL = 'http://localhost:3001';
+axios.defaults.baseURL = 'http://localhost:3001/';
 
 function App() {
   return (
