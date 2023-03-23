@@ -1,0 +1,15 @@
+.loading{
+    background: url('../../Imagenes/loading.ro.gif');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.l{
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color:rgb(255, 255, 255);
+}
+

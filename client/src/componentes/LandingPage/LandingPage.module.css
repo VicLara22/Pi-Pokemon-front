@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+
+
+.fondo {
+  background: url('../../Imagenes/pokeLand.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title{
+  position: absolute;
+  color: white;
+  font-size: 60px;
+  top: 40%;
+  left: 5%;
+  padding: 20px;
+}
+
+.containerg{
+  position: absolute;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  top: 76%;
+  left: 22%;
+}
+.containerl{
+  position: absolute;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  top: 76%;
+  left: 12%;
+}
+.containert{
+  position: absolute;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  top: 76%;
+  left: 17%;
+}
+.button {
+    position: absolute;
+    top: 62%;
+    left: 18%;
+    padding: 20px;
+    background: #fa00007c;
+    margin-top: 20px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    list-style: none;
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 70px;
+    font-size: 30px;
+    color: #ffffff;
+}
+.button::before {
+  position: absolute;
+  border-radius: 35px;
+  top: 0;
+  left:0;
+  height:100%;
+  width: 100%;
+  z-index:-1;
+  transition: .2s;
+}
+.button:hover{
+  box-shadow: 0px 0px 15px 0px rgba(255, 121, 72, 0.945);
+  cursor: pointer;
+}

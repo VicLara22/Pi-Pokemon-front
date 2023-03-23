@@ -1,0 +1,147 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.fondo {
+    background: url('../../Imagenes/create.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.type{
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    width: 80px;
+    padding: 0px 0px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    margin: 2px 0;
+    display:inline-table;
+}
+
+.botonX{
+    color: rgb(255, 0, 0);
+}
+
+.buttonCreate {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    padding: 6px;
+    background: #5c0000dc;
+    margin-top: 20px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    list-style: none;
+    border-radius: 10px;
+    border: 3px solid black;
+    width: 345px;
+    height: 50px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.buttonCreate::before {
+    position: absolute;
+    border-radius: 35px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: .2s;
+}
+
+.buttonCreate:hover {
+    box-shadow: 0px 0px 15px 0px rgba(255, 121, 72, 0.945);
+    cursor: pointer;
+}
+
+.buttonBack {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    padding: 6px;
+    background: #fa00007c;
+    margin-top: 20px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    list-style: none;
+    border-radius: 10px;
+    border: none;
+    width: 110px;
+    height: 40px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.buttonBack::before {
+    position: absolute;
+    border-radius: 35px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: .2s;
+}
+
+.buttonBack:hover {
+    box-shadow: 0px 0px 15px 0px rgba(255, 121, 72, 0.945);
+    cursor: pointer;
+}
+
+.danger {
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+}
+
+.form {
+    height: 450px;
+    width: 300px;
+    padding: 16px;
+    border-radius: 10px;
+    border: 3px solid black;
+    margin: auto;
+    margin-top: 100px;
+    background-color: rgba(124, 2, 2, 0.712);
+}
+
+form label {
+    width: 72px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="url"],
+form input[type="option"] {
+    width: 180px;
+    padding: 3px 10px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    margin: 8px 0;
+    display: inline-block;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 32px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: block;
+    color: #fff;
+    background-color: #000;
+}
+
+form input[type="submit"]:hover {
+    cursor: pointer;
+}
