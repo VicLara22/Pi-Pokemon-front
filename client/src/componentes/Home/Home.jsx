@@ -7,12 +7,11 @@ import Card from "../Card/Card";
 import Paginado from "../Paginado/Paginado";
 import styles from './Home.module.css';
 import NavBar from "../NavBar/NavBar";
-import Loading from "../Loading/Loading";
 import NotFound from "../Ups/NoEncontrado";
 
 export default function Home() {
   const dispatch = useDispatch()
-  const allPokemons = useSelector((state) => state.pokemons)// con useSelec traeme en esa cons todo lo que este en el estado de pokemons
+  const allPokemons = useSelector((state) => state.pokemons)
   const [order, setOrder] = useState('')
   const [currentPage, setCurrentPage] = useState(1);
   
@@ -67,20 +66,21 @@ export default function Home() {
       </div>
       <div>
         <div className={styles.box}>
+          <label className={styles.label}>Order</label>
           <select onChange={e => handleSort(e)} className={styles.filter}>
-            <option value=''>Order</option>
-            <option value='A-Z'>A-Z</option>
-            <option value='Z-A'>Z-A</option>
+            <option value='A-Z'>Ascendant</option>
+            <option value='Z-A'>Falling</option>
           </select>
         </div>
         <div className={styles.box}>
+        <label className={styles.label}>Attack</label>
           <select onChange={e => handleFilterAttack(e)} className={styles.filter}>
-            <option value=''>Attack</option>
-            <option value='strong'>Stronger attack</option>
-            <option value='weak'>Weaker attack</option>
+            <option value='strong'>Stronger</option>
+            <option value='weak'>Weaker</option>
           </select>
         </div>
         <div className={styles.box}>
+        <label className={styles.label}>Types</label>
           <select onChange={e => handleFilterTypes(e)} className={styles.filter}>
             <option value='all'>All types</option>
             <option value='normal'>Normal</option>
@@ -105,12 +105,13 @@ export default function Home() {
             <option value='shadow'>Shadow</option>
           </select>
         </div>
+        <label className={styles.label}>Origin</label>
         <select onChange={e => handleFilterCreated(e)} className={styles.filter}>
-          <option value=''>Origin</option>
           <option value='api'>Existing</option>
           <option value='created'>Created</option>
         </select>
-        <button onClick={e => { handleClick(e) }} className={styles.filter}>Refresh All Filters</button>
+        <label className={styles.label}>Refresh</label>
+        <button onClick={e => { handleClick(e) }} className={styles.filter}>All Filters</button>
         <Paginado pokemonsPerPage={pokemonsPerPage} allPokemons={allPokemons.length} paginado={paginado} />
         <div className={styles.pokemonContainer}>
           {
