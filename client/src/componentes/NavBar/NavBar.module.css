@@ -38,3 +38,40 @@
     box-shadow: 0px 0px 15px 0px rgba(255, 121, 72, 0.945);
     cursor: pointer;
 }
+
+@media (max-width: 750px){
+ .link {
+        font-size: 1.1rem;
+        padding: 4px;
+   
+        width: 100px;
+    height: 28px;
+    }
+}
+
+@media (max-width: 620px){
+    .link {
+         font-size: 1rem;
+         height: 1.6rem;
+         padding: 3px;
+  
+        width: 90px;
+    height: 24px;
+    }
+ }
+ 
+ @media (max-width: 400px){
+    .link {
+         font-size: 0.9rem;
+         height: 1.7rem;
+        padding: 2px;
+     }
+ }
+ @media (max-width: 380px){
+    .link {
+         font-size: 0.8rem;
+         height: 2rem;
+         padding: 1px;
+     }
+ }
+ 

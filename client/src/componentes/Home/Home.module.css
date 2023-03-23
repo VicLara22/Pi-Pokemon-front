@@ -67,3 +67,33 @@
     justify-content: space-evenly;
 }
 
+
+@media (max-width: 970px){
+    .filter, .label {
+         font-size: 14px;
+        
+     }
+ }
+ 
+ @media (max-width: 850px){
+    .filter, .label  {
+          font-size: 12px;
+
+      }
+  }
+  
+  @media (max-width: 400px){
+    .filter, .label  {
+          font-size: 10px;
+      
+      
+      }
+  }
+  @media (max-width: 380px){
+    .filter, .label  {
+          font-size: 8px;
+      
+        
+      }
+  }
+  

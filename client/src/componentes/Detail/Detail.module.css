@@ -26,7 +26,7 @@
     border-radius: 10px;
     margin: 10px;
     margin-right: 15px;
-    margin-top: 50px;
+    margin-top: 70px;
     background-color: rgba(124, 2, 2, 0.712);
     display: inline-block;
 }
@@ -99,3 +99,9 @@
     cursor: pointer;
 }
 
+@media (max-width: 600px){
+    .button {
+        left: 15%;
+       }
+   }
+   

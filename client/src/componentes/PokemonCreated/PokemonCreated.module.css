@@ -31,7 +31,7 @@
 .buttonCreate {
     position: absolute;
     top: 5%;
-    left: 50%;
+    left: 49.5%;
     padding: 6px;
     background: #5c0000dc;
     margin-top: 20px;
@@ -145,3 +145,37 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     cursor: pointer;
 }
+
+@media (max-width: 600px){
+    .buttonCreate {
+        left: 48.5%;
+        width: 340px;
+    height: 48px;
+       }
+       .buttonBack {
+        width: 100px;
+    height: 38px;
+
+       }
+   }
+
+   @media (max-width: 570px){
+    .buttonCreate { 
+        width: 320px;
+       }
+       .buttonBack {
+        width: 80px;
+       }
+   }
+     @media (max-width: 520px){
+    .buttonCreate { 
+        width: 310px;
+       }
+       .buttonBack {
+        width: 70px;
+       }
+   }
+   
+   
+   
+   

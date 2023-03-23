@@ -32,3 +32,52 @@
     box-shadow: 0px 0px 15px 0px #e1e1e1;
     cursor: pointer;
 }
+
+@media (max-width: 920px){
+    .container input{
+         font-size: 15px;
+         height: 25px;
+          width: 250px;
+        
+     }
+    
+ }
+ 
+ @media (max-width: 850px){
+    .container input   {
+          font-size: 15px;
+          height: 25px;
+          width: 230px;
+      }
+      .container button {
+        height: 33px;
+    width: 40px;
+      }
+  }
+  
+  @media (max-width: 620px){
+    .container input {
+          font-size: 14px;
+          height: 20px;
+          width: 210px;
+      
+      
+      }
+      .container button {
+        height: 30px;
+    width: 38px;
+      }
+  }
+  @media (max-width: 500px){
+    .container input  {
+          font-size: 14px;
+          height: 20px;
+          width: 200px;
+
+      }
+      .container button {
+        height: 29px;
+    width: 34px;
+      }
+  }
+  
