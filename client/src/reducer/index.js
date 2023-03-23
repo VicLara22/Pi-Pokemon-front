@@ -27,13 +27,13 @@ function rootReducer(state = initialState, action) {
     case 'FILTER_BY_TYPES':
       const typeFilter = action.payload === 'all' ? 
       state.allPokemons : 
-      state.allPokemons?.filter(e => e.type?.includes(action.payload))
+      state.allPokemons?.filter(e => e?.type?.includes(action.payload))
       return {
         ...state,
         pokemons: typeFilter
       }
       case 'ORDER_BY_NAME':
-      const sort = action.payload === 'A-Z' ? state.pokemons.sort(function (a, b) {
+      const sort = action.payload === 'A-Z' ? state.pokemons?.sort(function (a, b) {
         if (a.name > b.name) {
           return 1;
         }
@@ -41,7 +41,7 @@ function rootReducer(state = initialState, action) {
           return -1;
         }
         return 0
-      }) : state.pokemons.sort(function (a, b) {
+      }) : state.pokemons?.sort(function (a, b) {
         if (a.name > b.name) {
           return -1;
         }
@@ -56,14 +56,14 @@ function rootReducer(state = initialState, action) {
       }
     case 'FILTER_CREATED':
     
-      const filterCreated = action.payload === 'created' ? state.allPokemons.filter(e => e.createBD) : state.allPokemons.filter(e => !e.createBD)
+      const filterCreated = action.payload === 'created' ? state.allPokemons?.filter(e => e.createBD) : state.allPokemons?.filter(e => !e.createBD)
       return {
         ...state,
         pokemons: action.payload === 'all' ? state.allPokemons : filterCreated
       }
     
     case 'FILTER_ATTACK':
-      const sortAttack = action.payload === 'strong' ? state.pokemons.sort(function (a, b) {
+      const sortAttack = action.payload === 'strong' ? state.pokemons?.sort(function (a, b) {
         if (a.attack > b.attack) {
           return 1;
         }
@@ -71,7 +71,7 @@ function rootReducer(state = initialState, action) {
           return -1
         }
         return 0
-      }) : state.pokemons.sort(function (a, b) {
+      }) : state.pokemons?.sort(function (a, b) {
         if (a.attack > b.attack) {
           return -1;
         }
