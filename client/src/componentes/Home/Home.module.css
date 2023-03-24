@@ -68,32 +68,23 @@
 }
 
 
-@media (max-width: 970px){
+@media (max-width: 1300px){
     .filter, .label {
-       
+         font-size: 14px;
         
      }
  }
  
- @media (max-width: 850px){
+ @media (max-width: 800px){
     .filter, .label  {
-     
-
+          font-size: 12px;
       }
   }
   
-  @media (max-width: 400px){
-    .filter, .label  {
-       
-      
-      
+@media (max-width: 680px){
+    .filter, .label {
+        font-size: 10px;
       }
-  }
-  @media (max-width: 380px){
-    .filter, .label  {
-          
       
-        
-      }
   }
   

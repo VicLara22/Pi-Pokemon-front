@@ -31,34 +31,20 @@
   color: white;
 }
 
-@media (max-width: 950px){
-  .paginado a {
-    width: 65px;
-    height: 45px;
-    line-height: 45px;
-     }
- }
- 
- @media (max-width: 870px){
-     .paginado a  {
-      width: 50px;
-      height: 40px;
-      line-height: 40px;
-     }
-  }
+
   
-  @media (max-width: 500px){
+  @media (max-width: 800px){
      .paginado a  {
-      width: 45px;
-      height: 35px;
-      line-height: 35px;
+      width: 55px;
+      height: 55px;
+      line-height: 45px;
       }
   }
-  @media (max-width: 380px){
+  @media (max-width: 680px){
      .paginado a {
-      width: 40px;
-      height: 30px;
-      line-height: 30px;
+      width: 35px;
+      height: 25px;
+      line-height: 25px;
       }
   }
   

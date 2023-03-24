@@ -1,5 +1,6 @@
 import axios from 'axios';
-const baseURL = 'https://pokemon-app-lwli.onrender.com'
+/* const baseURL = 'https://pokemon-app-lwli.onrender.com' */
+const baseURL = 'http://localhost:3001'
 
 export function getPokemons() {
   return async function (dispatch) {

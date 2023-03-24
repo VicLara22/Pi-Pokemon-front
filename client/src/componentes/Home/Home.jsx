@@ -105,13 +105,17 @@ export default function Home() {
             <option value='shadow'>Shadow</option>
           </select>
         </div>
+        <div className={styles.box}>
         <label className={styles.label}>Origin</label>
         <select onChange={e => handleFilterCreated(e)} className={styles.filter}>
           <option value='api'>Existing</option>
           <option value='created'>Created</option>
         </select>
+        </div>
+        <div className={styles.box}>
         <label className={styles.label}>Refresh</label>
         <button onClick={e => { handleClick(e) }} className={styles.filter}>All Filters</button>
+        </div>
         <Paginado pokemonsPerPage={pokemonsPerPage} allPokemons={allPokemons.length} paginado={paginado} />
         <div className={styles.pokemonContainer}>
           {

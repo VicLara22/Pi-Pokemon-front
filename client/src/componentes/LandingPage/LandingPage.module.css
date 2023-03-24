@@ -80,110 +80,39 @@
   cursor: pointer;
 }
 
-@media (max-width: 950px){
-  .title {
+
+  @media (max-width: 800px){
+    .title {
+     left: 0%;
+    }
+    .button  {
+     left: 26%;
+    }
+    .containerg {       
+     left: 34%;
+    }
+    .containerl {
+    left: 24%;
+    }
+    .containert {       
+    left: 15%;
+    }
+  }
+  @media (max-width: 680px){
+    .title {
+    font-size: 50px;
     left: 0%;
-
-  }
-  .containerg {
-
-  left: 26%;
-  }
-  .containerl {
-   
-  left: 21%;
-  }
-  .containert {
- 
-  left: 16%;
-  }
-  .button  {
-   left: 22%;
-     }
- }
- 
-
-  @media (max-width: 850px){
-    .title {
-     left: 0%;
     }
     .button  {
-     left: 22%;
-       }
-       .containerg {
-
-        left: 24%;
-        }
-        .containerl {
-         
-        left: 19%;
-        }
-        .containert {
-       
-        left: 14%;
-        }
-  }
-  @media (max-width: 780px){
-    .title {
-     left: 0%;
+     left: 26%;
     }
-    .button  {
-     left: 30%;
-       }
-       .containerg {
-
-        left: 36%;
-        }
-        .containerl {
-         
-        left: 27%;
-        }
-        .containert {
-       
-        left: 18%;
-        }
-  }
-  @media (max-width: 625px){
-    .title {
-
-     left: 0%;
+    .containerg {
+      left: 34%;
     }
-    .button  {
-     left: 36%;
- 
-       }
-       .containerg {
-       
-        left: 44%;
-        }
-        .containerl {
-         
-        left: 34%;
-        }
-        .containert {
-         
-        left: 25%;
-        }
-  }
-  @media (max-width: 580px){
-    .title {
-      font-size: 50px;
-     left: 0%;
+    .containerl {       
+     left: 23%;
     }
-    .button  {
-     left: 36%;
- 
-       }
-       .containerg {
- 
-        left: 44%;
-        }
-        .containerl {
-        
-        left: 33%;
-        }
-        .containert {
-       
-        left: 22%;
-        }
+    .containert {     
+      left: 12%;
+    }
   }

@@ -33,51 +33,27 @@
     cursor: pointer;
 }
 
-@media (max-width: 920px){
-    .container input{
-         font-size: 15px;
-         height: 25px;
-          width: 250px;
-        
-     }
-    
- }
  
- @media (max-width: 850px){
-    .container input   {
-          font-size: 15px;
-          height: 25px;
-          width: 230px;
-      }
-      .container button {
-        height: 33px;
-    width: 40px;
-      }
-  }
   
-  @media (max-width: 620px){
+  @media (max-width: 800px){
     .container input {
-          font-size: 14px;
-          height: 20px;
-          width: 210px;
-      
-      
+          font-size: 12px;
+          width: 180px;
       }
       .container button {
-        height: 30px;
+        height: 32px;
     width: 38px;
       }
   }
-  @media (max-width: 500px){
+  @media (max-width: 680px){
     .container input  {
-          font-size: 14px;
-          height: 20px;
-          width: 200px;
+     font-size: 10px;
+     width: 100px;
 
       }
       .container button {
-        height: 29px;
-    width: 34px;
+     height: 29px;
+     width: 28px;
       }
   }
   

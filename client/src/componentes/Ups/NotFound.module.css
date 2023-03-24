@@ -8,6 +8,20 @@
     margin-right: 50px;
     margin-top: 150px;
     background-color: #c9010160;
-     
     color:white;
+}
+@media (max-width: 800px){
+    .container{
+        height: 60px;
+        width: 250px;
+        font-size: 12px;
+       } 
+}
+
+@media (max-width: 680px){
+   .container{
+    height: 50px;
+    width: 200px;
+    font-size: 10px;
+   } 
 }

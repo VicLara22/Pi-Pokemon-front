@@ -146,20 +146,9 @@ form input[type="submit"]:hover {
     cursor: pointer;
 }
 
-@media (max-width: 600px){
-    .buttonCreate {
-        left: 48.5%;
-        width: 340px;
-    height: 48px;
-       }
-       .buttonBack {
-        width: 100px;
-    height: 38px;
 
-       }
-   }
 
-   @media (max-width: 570px){
+   @media (max-width: 800px){
     .buttonCreate { 
         width: 320px;
        }
@@ -167,7 +156,7 @@ form input[type="submit"]:hover {
         width: 80px;
        }
    }
-     @media (max-width: 520px){
+     @media (max-width: 680px){
     .buttonCreate { 
         width: 310px;
        }
