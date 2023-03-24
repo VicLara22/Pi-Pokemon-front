@@ -4,10 +4,7 @@ import LandingPage from './componentes/LandingPage/LandingPage';
 import Home from './componentes/Home/Home'
 import PokemonCreated from './componentes/PokemonCreated/PokemonCreated'
 import Detail from './componentes/Detail/Detail'
-import axios from 'axios';
 
-/* axios.defaults.baseURL = 'https://pi-pokemon-app.vercel.app/'; */
-axios.defaults.baseURL = 'https://localhost:3001/';
 
 function App() {
   return (
