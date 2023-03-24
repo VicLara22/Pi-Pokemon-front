@@ -36,15 +36,16 @@
   @media (max-width: 800px){
      .paginado a  {
       width: 55px;
-      height: 55px;
-      line-height: 45px;
+      height: 45px;
+      font-size: 14px;
       }
   }
   @media (max-width: 680px){
      .paginado a {
-      width: 35px;
-      height: 25px;
-      line-height: 25px;
+      width: 45px;
+      height: 35px;
+      font-size: 10px;
+      line-height: 30px;
       }
   }
   
