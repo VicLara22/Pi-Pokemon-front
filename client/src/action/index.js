@@ -32,7 +32,7 @@ export function getNamePokemons(name) {
 export function getTypes() {
   return async function (dispatch) {
     try {
-      var json = await axios.get(`${baseURL}/type`)
+      var json = await axios.get(`${baseURL}/types`)
       return dispatch({
         type: 'GET_TYPES',
         payload: json.data
