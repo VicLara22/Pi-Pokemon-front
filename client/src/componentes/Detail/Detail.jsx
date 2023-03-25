@@ -25,7 +25,7 @@ export default function Detail() {
     return (
         <div className={styles.fondo}>
                 {
-                    detail.length > 0 ?
+                    detail?.length > 0 ?
                         <div className={styles.container}>
                            <div> 
                            <h1>{detail[0].name[0].toUpperCase() +detail[0].name.slice(1)}</h1>
