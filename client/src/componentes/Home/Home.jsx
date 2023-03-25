@@ -28,6 +28,7 @@ export default function Home() {
     dispatch(getPokemons());
   }, [dispatch])
 
+
   function handleClick(e) {
     e.preventDefault();
     dispatch(getPokemons());
@@ -119,9 +120,9 @@ export default function Home() {
         <Paginado pokemonsPerPage={pokemonsPerPage} allPokemons={allPokemons.length} paginado={paginado} />
         <div className={styles.pokemonContainer}>
           {
-            currentPokemons.length > 0 
+            currentPokemons?.length > 0 
             ?
-              currentPokemons.map((e) =>
+              currentPokemons?.map((e) =>
                 <Link to={`/home/${e.id}`}>
                   <Card id={e.id} name={e.name} img={e.img} type={e.type} key={e.id} />   
                   </Link>)
