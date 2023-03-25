@@ -199,7 +199,7 @@ export default function PokemonCreated() {
                     <select onChange={e => handleSelect(e)}>
 
                         {
-                            types?.map(t => (<option key={t.name}  value={t.name} name='type'>{t.name}</option>))
+                            types?.map(t => (<option key={t.id}  value={t.name} name='type'>{t.name}</option>))
                         }
                     </select>
                     {errors.type && <p className={styles.danger}>{errors.type}</p>}
