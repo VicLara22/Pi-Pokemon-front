@@ -38,7 +38,7 @@ export default function Detail() {
                             <h4>Speed: {detail[0].speed}</h4>
                             <h4>Height: {detail[0].height}</h4>
                             <h4>Weight: {detail[0].weight}</h4>
-                            <h3>Types: {detail[0].type?.map(e => {
+                            <h3>Types: {detail?.type?.map(e => {
                                     return <h3 key={e} value={e} className={styles.type}>{e[0].toUpperCase()+ e.slice(1)}</h3>
                              })} </h3>
 
