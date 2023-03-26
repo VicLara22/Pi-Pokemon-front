@@ -39,10 +39,10 @@ export default function Detail() {
                             <h4>Height: {detail[0].height}</h4>
                             <h4>Weight: {detail[0].weight}</h4>
                             <h3>Types: {detail[0]?.types?.map(e => {
-                                    return <h3 key={e} value={e} className={styles.type}>{e.toUpperCase()+ e.slice(1)}</h3>
+                                    return <h3 key={e} value={e} className={styles.type}>{e}</h3>
                              })} </h3>
 
-{/*                           <h3>Types: {detail[0].types[0].name} </h3>
+{/*                          {e.toUpperCase()+ e.slice(1)} <h3>Types: {detail[0].types[0].name} </h3>
  */}                              
 
                             </div>
