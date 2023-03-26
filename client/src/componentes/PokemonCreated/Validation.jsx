@@ -41,8 +41,8 @@ export default function validate(input) {
     if (!input.img) {
         errors.img = 'An image is required';
     }
-    if (input.type.length === 0 || input.type === undefined) {
-        errors.type = 'At least one type is required';
+    if (input.types?.length === 0 || input.types === undefined) {
+        errors.types = 'At least one type is required';
     }
     return errors;
 }
