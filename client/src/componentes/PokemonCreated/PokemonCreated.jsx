@@ -20,7 +20,7 @@ export default function PokemonCreated() {
         height: 0,
         weight: 0,
         img: '',
-        type: ['']
+        type: [],
     })
 
 
@@ -68,7 +68,7 @@ export default function PokemonCreated() {
             height: 0,
             weight: 0,
             img: '',
-            type: ['']
+            type: [],
         })
         history.push('/home') //redirigir
     }
@@ -216,12 +216,12 @@ export default function PokemonCreated() {
                         }
                     </div>
                 </div>
-              
-            </form>
-              <div>
-                <button  className={styles.buttonCreate} disabled={errors.name || errors.life || errors.strength || errors.speed || errors.defense || errors.height || errors.weight || errors.type || errors.img || input.name === "" ? true : false}>Create your Pokemon</button>
+               <div>
+                <button  className={styles.buttonCreate} disabled={errors.name || errors.life || errors.strength || errors.speed || errors.defense || errors.height || errors.weight || errors.type || errors.img || input.name === " " ? true : false}>Create your Pokemon</button>
 
                 </div>
+            </form>
+             
             </div>
        
     )
