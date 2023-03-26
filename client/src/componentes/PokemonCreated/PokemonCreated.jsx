@@ -43,12 +43,12 @@ export default function PokemonCreated() {
     function handleSelect(e) {
         setErrors(validate({
             ...input,
-            type: [...input.type, e.target.value]
+            types: [...input.types, e.target.value]
         }))
-         if (input.type.length < 2) {
+         if (input.types.length < 2) {
             setInput({
                 ...input,
-                type: [...input.type, e.target.value]
+                types: [...input.types, e.target.value]
             })
         } else {
             alert("You can only choose 2 types")
