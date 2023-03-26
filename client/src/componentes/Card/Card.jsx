@@ -8,7 +8,7 @@ export default function Card({name, img, types, id}){
             <img src={img} alt='img not found' />
             <div>
             
- {type?.map(e => {
+ {types?.map(e => {
                     return <h4 key={e} value={e} className={styles.type}>{e[0].toUpperCase() + e.slice(1)}</h4>
                 })}
             </div>
