@@ -81,7 +81,7 @@ export default function PokemonCreated() {
         }))
         setInput({
             ...input,
-            type: input.type.filter(t => t !== e)
+            type: input.type.filter(t => t === e)
         })
     }
 
