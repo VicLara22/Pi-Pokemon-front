@@ -124,11 +124,8 @@ export default function Home() {
             ?
               currentPokemons?.map((e) =>
                 <Link to={`/home/${e.id}`}>
-                  <Card id={e.id} name={e.name} img={e.img} 
-                    types={e.type?.map((el, index) => el.name.charAt(0).toUpperCase() + el.name.slice(1) + (index === e.type.length - 1 ? '' : ', '))}
-                  // type={e.type}
-                  key={e.id} />   
-                  </Link>)
+                  <Card id={e.id} name={e.name} img={e.img} types={e.type} key={e.id} />   
+                </Link>)
             :
              
             <NotFound/>
