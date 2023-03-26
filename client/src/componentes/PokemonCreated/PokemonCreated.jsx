@@ -77,11 +77,11 @@ export default function PokemonCreated() {
 
         setErrors(validate({
             ...input,
-            type: input.type.filter(t => t !== e)
+            types: input.types.filter(t => t !== e)
         }))
         setInput({
             ...input,
-            type: input.type.filter(t => t !== e)
+            types: input.types.filter(t => t !== e)
         })
     }
 
