@@ -20,7 +20,7 @@ export default function PokemonCreated() {
         height: 0,
         weight: 0,
         img: '',
-        types: []
+        type: ['']
     })
 
 
@@ -68,7 +68,7 @@ export default function PokemonCreated() {
             height: 0,
             weight: 0,
             img: '',
-            types: []
+            type: ['']
         })
         history.push('/home') //redirigir
     }
