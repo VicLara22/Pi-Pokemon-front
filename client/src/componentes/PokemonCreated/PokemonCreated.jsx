@@ -205,7 +205,7 @@ export default function PokemonCreated() {
                     {errors.types && <p className={styles.danger}>{errors.types}</p>}
 
                     <div>
-                        {input?.types?.map(e =>
+                        {input?.type?.map(e =>
                             <div>
                                 <div>
                                     <p className={styles.type}>{e}</p>
