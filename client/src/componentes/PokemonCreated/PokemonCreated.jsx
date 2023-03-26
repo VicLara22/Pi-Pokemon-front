@@ -205,10 +205,11 @@ export default function PokemonCreated() {
                     {errors.type && <p className={styles.danger}>{errors.typs}</p>}
 
                     <div>
-                        {input?.type?.map(e =>
+                        {input.type?.map(e =>
                             <div>
+                            <p className={styles.type}>{e}</p>
                                 <div>
-                                    <p className={styles.type}>{e}</p>
+                                    
                                     <button key='botonX' className={styles.botonX} onClick={() => handleDelete(e)}>X</button>
                                 </div>
                             </div>)
