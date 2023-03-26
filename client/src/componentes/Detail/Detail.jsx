@@ -38,7 +38,7 @@ export default function Detail() {
                             <h4>Speed: {detail[0].speed}</h4>
                             <h4>Height: {detail[0].height}</h4>
                             <h4>Weight: {detail[0].weight}</h4>  
-                            {detail[0]?.type 
+                            {detail[0]?.type.length > 0  
                             ?
                                (<h3>{detail[0]?.type?.map(e => {
                                     return <h3 key={e} value={e} className={styles.type}>{e}</h3>
