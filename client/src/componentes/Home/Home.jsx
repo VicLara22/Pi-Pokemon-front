@@ -7,7 +7,8 @@ import Card from "../Card/Card";
 import Paginado from "../Paginado/Paginado";
 import styles from './Home.module.css';
 import NavBar from "../NavBar/NavBar";
-import NotFound from "../Ups/NoEncontrado";
+//import NotFound from "../Ups/NoEncontrado";
+import Loading from "../Loading/Loading";
 
 export default function Home() {
   const dispatch = useDispatch()
@@ -128,7 +129,7 @@ export default function Home() {
                 </Link>)
             :
              
-            <NotFound/>
+            <Loading/>
                }            
         </div>
       </div>
