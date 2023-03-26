@@ -45,7 +45,7 @@ export default function PokemonCreated() {
             ...input,
             type: [...input.type, e.target.value]
         }))
-         if (input.types.length < 2) {
+         if (input.type.length < 2) {
             setInput({
                 ...input,
                 type: [...input.type, e.target.value]
@@ -195,14 +195,14 @@ export default function PokemonCreated() {
                     {errors.img && <p className={styles.danger}>{errors.img}</p>}
                 </div>
                 <div>
-                    <label key='types'>Types:</label>
+                    <label key='type'>Types:</label>
                     <select onChange={e => handleSelect(e)}>
 
                         {
-                            types?.map(t => (<option key={t.id}  value={t.name} name='types'>{t.name}</option>))
+                            types?.map(t => (<option key={t.id}  value={t.name} name='type'>{t.name}</option>))
                         }
                     </select>
-                    {errors.types && <p className={styles.danger}>{errors.types}</p>}
+                    {errors.type && <p className={styles.danger}>{errors.typs}</p>}
 
                     <div>
                         {input?.type?.map(e =>
@@ -216,7 +216,7 @@ export default function PokemonCreated() {
                     </div>
                 </div>
                 <div>
-                <button  className={styles.buttonCreate} disabled={errors.name || errors.life || errors.strength || errors.speed || errors.defense || errors.height || errors.weight || errors.types || errors.img || input.name === "" ? true : false}>Create your Pokemon</button>
+                <button  className={styles.buttonCreate} disabled={errors.name || errors.life || errors.strength || errors.speed || errors.defense || errors.height || errors.weight || errors.type || errors.img || input.name === "" ? true : false}>Create your Pokemon</button>
 
                 </div>
             </form>
