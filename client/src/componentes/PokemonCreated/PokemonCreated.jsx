@@ -9,7 +9,7 @@ import validate from './Validation';
 export default function PokemonCreated() {
     const dispatch = useDispatch()
     const history = useHistory()
-    const types = useSelector((state) => state.types)
+    const types = useSelector((state) => state.type)
     const [errors, setErrors] = useState({})
     const [input, setInput] = useState({
         name: '',
