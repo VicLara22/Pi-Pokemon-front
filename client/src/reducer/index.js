@@ -2,7 +2,7 @@
 const initialState = {
   pokemons: [],
   allPokemons: [],
-  types: [],
+  type: [],
   detail: {}
 }
 function rootReducer(state = initialState, action) {
@@ -22,7 +22,7 @@ function rootReducer(state = initialState, action) {
     case 'GET_TYPES':
       return {
         ...state,
-        types: action.payload
+        type: action.payload
       }
     case 'FILTER_BY_TYPES':
       const typeFilter = action.payload === 'all' ? 
