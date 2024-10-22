@@ -26,7 +26,7 @@ export default function LandinPage() {
           <AiFillGithub size={30} />
         </a>
         <a
-          href="https://www.linkedin.com/in/LaraVictoriaMoyano/"
+          href="https://www.linkedin.com/in/LaraVMoyano/"
           target="_blank"
           rel=""
           className={styles.containerl}
